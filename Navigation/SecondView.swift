@@ -9,7 +9,13 @@ import SwiftUI
 
 struct SecondView: View {
     var body: some View {
-        Text("This is the second view!")
+        VStack {
+            Text("This is the second view!")
+            NavigationLink(destination:
+                ThirdView()){
+                Text("click!")
+            }
+        }
     }
 }
 
